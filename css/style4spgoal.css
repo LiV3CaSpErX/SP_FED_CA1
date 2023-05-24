@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* 
+Author: Kaung Min Khant
+File type: css file
+Style for: spgoal.html
+FIle path: SP_FED_CA1/css/style4spgoal.css
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* header section */
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to left, #a3e6b0, #53d0aa);
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  margin-right: 8em;
+  cursor: pointer;
+}
+
+header h1 {
+  color: #eefcf3;
+  cursor: default;
+  font-family: Fantasy, sans-serif;
+  letter-spacing: 0.2em;
+}
+
+/* navigation section */
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #040802;
+  letter-spacing: 0.1em;
+}
+
+header nav ul li a:hover {
+  filter: invert(1);
+}
+/* body section */
+
+/* image from https://freesvg.org/lineart-vector-clip-art-of-a-tree*/
+section {
+  padding-top: 3em;
+  text-align: center;
+  line-height: 2em;
+  background: url("../svg/interactivemap/background-image.svg") no-repeat bottom
+      right / 30%,
+    #eef9dd;
+}
+
+section h2 {
+  letter-spacing: 0.1em;
+  color: #a3e6b0;
+  text-shadow: 1px 1px #53d0aa;
+  font-family: Fantasy, sans-serif;
+  cursor: pointer;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+section h2:hover {
+  color: #040802;
+}
+
+section > p {
+  font-family: Courier, sans-serif;
+  color: #040802;
+  background-color: #53d0aa;
+  font-style: italic;
+  margin-bottom: 3em;
+}
+
+/* Sp map and interactive icons section*/
+.imageContainer {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+#map {
+  text-align: right;
+}
+
+#map figure img {
+  max-width: 100%;
+}
+
+#map figure figcaption {
+  font-size: 0.8em;
+  font-family: Courier, sans-serif;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  color: #53d0aa;
+}
+
+#map figure figcaption a {
+  text-decoration: none;
+  color: #53d0aa;
+}
+
+#map figure figcaption a:hover {
+  color: #040802;
+}
+
+.icon {
+  position: absolute;
+  width: 5%;
+  text-align: center;
+}
+
+.icon p {
+  color: #53d0aa;
+  font-weight: bold;
+  background-color: #eefcf3;
+  display: none;
+  font-family: cursive, sans-serif;
+}
+
+.icon:hover p {
+  display: inline-block;
+}
+#icon1 {
+  top: 3%;
+  left: 55%;
+}
+
+#icon2 {
+  top: 3%;
+  left: 80%;
+}
+
+#icon3 {
+  top: 27%;
+  left: 85%;
+}
+
+#icon4 {
+  top: 70%;
+  left: 53%;
+}
+
+#icon5 {
+  top: 31%;
+  left: 24%;
+}
+
+#icon6 {
+  top: 41%;
+  left: 13%;
+}
+
+/* info card section */
+.infoContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+.info {
+  border: 1px solid #a3e6b0;
+  box-shadow: 1px 5px #53d0aa;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 3em;
+  line-height: 1.8em;
+}
+
+.info:hover {
+  box-shadow: 10px 10px #53d0aa;
+  transition: ease;
+}
+
+.info h2 {
+  letter-spacing: 0.1em;
+  color: #a3e6b0;
+  text-shadow: 1px 1px #53d0aa;
+  font-family: Fantasy, sans-serif;
+  cursor: pointer;
+}
+
+.info h2:hover {
+  color: #040802;
+}
+
+.info p {
+  color: #040802;
+  letter-spacing: 0.1em;
+  font-family: monospace, sans-serif;
+}
+
+/* footer section */
+footer {
+  text-align: left;
+  padding-top: 0.5em;
+  background-color: #eef9dd;
+  color: #040802;
+}
+
+footer p {
+  padding-left: 2em;
+}
+hr {
+  border: 1px double #53d0aa;
+}
+
+footer p a {
+  font-family: "Times New Roman", sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #53d0aa;
+}
+
+footer p a:hover {
+  filter: hue-rotate(90deg);
+}

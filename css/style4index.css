@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* 
+Author: Kaung Min Khant
+File type: css file
+Style for: index.html
+File path: SP_FED_CA1/css/style4index.css
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* header section */
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to left, #a3e6b0, #53d0aa);
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  margin-right: 8em;
+  cursor: pointer;
+}
+
+header h1 {
+  color: #eefcf3;
+  cursor: default;
+  font-family: Fantasy, sans-serif;
+  letter-spacing: 0.2em;
+}
+
+/* navigation section */
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #040802;
+  letter-spacing: 0.1em;
+}
+
+header nav ul li a:hover {
+  filter: invert(1);
+}
+/* body section */
+
+/* image from https://freesvg.org/lineart-vector-clip-art-of-a-tree */
+section {
+  background: url("../svg/interactivemap/background-image.svg") no-repeat right
+      bottom / 30%,
+    #eef9dd;
+}
+
+/* Section Section */
+h2 {
+  font-family: monospace, sans-serif;
+  padding-top: 1em;
+  padding-left: 1.4em;
+  letter-spacing: 0.2em;
+  color: #040802;
+}
+
+h2:first-of-type::first-letter {
+  font-family: Courier, sans-serif;
+  text-transform: uppercase;
+  font-size: 200%;
+}
+
+section > p {
+  padding-left: 2em;
+  padding-bottom: 2em;
+  letter-spacing: 0.1em;
+  font-family: "Times New Roman", sans-serif;
+}
+
+em {
+  cursor: pointer;
+  color: #a3e6b0;
+  text-shadow: 1px 1px #53d0aa;
+  font-family: Fantasy, sans-serif;
+}
+
+em:hover {
+  color: #040802;
+}
+
+/* Article Section */
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em 1em;
+}
+
+.info {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.3em;
+  color: #a3e6b0;
+  text-shadow: 1px 1px #53d0aa;
+}
+
+/* info card section*/
+
+.card {
+  cursor: pointer;
+  border: 2px solid #a3e6b0;
+  box-shadow: 5px 5px #53d0aa;
+  text-align: center;
+  border-radius: 25px 0 25px 0;
+}
+
+.card:hover {
+  box-shadow: 10px 10px #53d0aa;
+  transition: ease;
+}
+
+.card p {
+  color: #040802;
+  letter-spacing: 0.1em;
+  font-family: monospace, sans-serif;
+}
+
+.card h5 {
+  color: #040802;
+  letter-spacing: 0.1em;
+  font-family: cursive, sans-serif;
+}
+
+/*Footer Section*/
+
+footer {
+  text-align: left;
+  padding-top: 0.5em;
+  background-color: #eef9dd;
+  color: #040802;
+}
+
+footer p {
+  padding-left: 2em;
+}
+hr {
+  border: 1px double #53d0aa;
+}
+
+footer p a {
+  font-family: "Times New Roman", sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #53d0aa;
+}
+
+footer p a:hover {
+  filter: hue-rotate(90deg);
+}
